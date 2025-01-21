@@ -18,3 +18,9 @@ sudo apt-get install docker-buildx-plugin docker-compose-plugin
 
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc;
 do sudo apt-get remove $pkg; done
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh ./get-docker.sh --dry-run
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
