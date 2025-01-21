@@ -15,3 +15,6 @@ sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo apt-get install docker-buildx-plugin docker-compose-plugin
+
+for pkg in docker.io docker-doc docker-compose podman-docker containerd runc;
+do sudo apt-get remove $pkg; done
